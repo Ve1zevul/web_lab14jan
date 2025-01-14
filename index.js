@@ -32,14 +32,14 @@ const CRUD_Operations = async () => {
     console.log('Enrolled Students:', enrolledStudents);
 
     const updatedStudent = await Student.findOneAndUpdate(
-        { name: 'John Doe' },
+        { name: 'Arseniy Kyuvashev' },
         { major: 'Mathematics' },
         { new: true }
     );
     console.log('Updated Student:', updatedStudent);
 
-    await Student.deleteOne({ name: 'Jane Smith' });
-    console.log('Jane Smith deleted.');
+    await Student.deleteOne({ name: 'Grigorii Zhebakhanov' });
+    console.log('Grigorii Zhebakhanov deleted.');
 };
 
 CRUD_Operations();
